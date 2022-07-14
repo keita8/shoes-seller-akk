@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <!-- css personnalisé -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+
+    <!-- preload banner -->
+    <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+    
+    <title>Shoes World</title>
+</head>
+<body id="top">
+
+    <!-- HEADER -->
+    <header class="header " data-header>
+        <div class="container">
+            <div class="overlay" data-overlay></div>
+
+            <!-- logo desktop -->
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" alt="footcap logo" width="160" height="50">
+            </a>
+
+            <!-- menu hamburger -->
+            <button class="nav-open-btn" data-nav-open-btn aria-label = "Open Menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <!-- navigation -->
+            <nav class="navbar" data-navbar>
+
+                <!-- bouton de fermeture du menu -->
+                <button class="nav-close-btn" data-nav-close-btn 
+                aria-label =" Close Menu">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+
+                <!-- logo format mobile -->
+                <a href="/" class="logo">
+                    <img src="./assets/images/logo.svg"  width="190" height="50" alt="footcap logo">
+                </a>
+
+                <!-- liste de menu -->
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="/" class="navbar-link">Accueil</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">À propos</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">Produits</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">Shop</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">Contact</a>
+                    </li>
+                </ul>
+
+
+                <!-- liste d'action -->
+                <ul class="nav-action-list">
+                    <li>
+                        <button class="nav-action-btn">
+                            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                            <span class="nav-action-text">Chercher</span>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-action-btn">
+                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                            <span class="nav-action-text">Login / Register</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-action-btn">
+                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                            <span class="nav-action-text">Wishlist</span>
+                            <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-action-btn">
+                            <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                            <data class="nav-action-text" value="318.00">Panier: <strong>$318.00</strong></data>
+                            <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <article>
+
+            <!-- HERO -->
+            <section class="section hero" style="background-image:url('./assets/images/hero-banner.png');">
+
+                <div class="container">
+
+                    <h2 class="h1 hero-title">
+                        Nouvelle collection <strong>d'été</strong>
+                    </h2>
+
+                    <p class="hero-text">
+                        Competently expedite alternative benefits whereas leading-edge catalysts for change. Globally leverage existing an
+                        expanded array of leadership.
+                    </p>
+                    
+                    <a href="#">
+                    <button class="btn btn-primary">
+                        <span>Shop Now</span>
+
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- COLLECTION -->
+            <section class="section collection">
+                <div class="container">
+                    <ul class="collection-list has-scrollbar">
+
+                        <li>
+                            <div class="collection-card" style="background-image: url('./assets/images/collection-1.jpg');">
+
+                            <h3 class="h4 card-title">Homme</h3>
+
+                            <a href="" class="btn btn-secondary">
+                                <span>Tous voir</span>
+
+                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                            </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collection-card" style="background-image: url('./assets/images/collection-2.jpg');">
+
+                            <h3 class="h4 card-title">Femme</h3>
+
+                            <a href="" class="btn btn-secondary">
+                                <span>Tous voir</span>
+
+                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                            </a>
+                            </div>
+                        </li>
+                        
+
+                        <li>
+                            <div class="collection-card" style="background-image: url('./assets/images/collection-3.jpg');">
+
+                            <h3 class="h4 card-title">Sport</h3>
+
+                            <a href="" class="btn btn-secondary">
+                                <span>Tous voir</span>
+
+                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                            </a>
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <!-- PRODUITS -->
+            <section class="section product">
+                <div class="container">
+                    <h2 class="h2 section-title">Articles</h2>
+
+                    <ul class="filter-list">
+                        <li>
+                            <button class="filter-btn active">Tout</button>
+                        </li>
+                        <li>
+                            <button class="filter-btn">Nike</button>
+                        </li>
+                        <li>
+                            <button class="filter-btn">Adidas</button>
+                        </li>
+                        <li>
+                            <button class="filter-btn">Puma</button>
+                        </li>
+                        <li>
+                            <button class="filter-btn">Apex</button>
+                        </li>
+                        <li>
+                            <button class="filter-btn">Dolce Gabana</button>
+                        </li>
+                    </ul>
+
+                    <ul class="product-list">
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+                                <figure class="card-banner">
+                                    <img src="./assets/images/product-1.jpg" width="312" height="350" loading="lazy" alt="product1" class="image-contain">
+
+                                    <div class="card-badge">New</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">
+                                                Ajouter au panier
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">
+                                                Liste de souhait
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">
+                                                Aperçu
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">
+                                                Compare
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Hommes</a> /
+                                        <a href="#" class="card-cat-link">Femmes</a>
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 card-title">
+                                    <a href="#">Running sneaker shoes</a>
+                                </h3>
+
+                                <data class="card-price" value="180.95">GNF180.95</data>
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+                                <figure class="card-banner">
+                                    <img src="./assets/images/product-2.jpg" width="312" height="350" loading="lazy" alt="product2" class="image-contain">
+
+                                    <div class="card-badge">New</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">
+                                                Ajouter au panier
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">
+                                                Liste de souhait
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">
+                                                Aperçu
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">
+                                                Compare
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Hommes</a> /
+                                        <a href="#" class="card-cat-link">Femmes</a>
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 card-title">
+                                    <a href="#">Running sneaker shoes</a>
+                                </h3>
+
+                                <data class="card-price" value="180.95">GNF180.95</data>
+                            </div>
+                        </li>
+
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+                                <figure class="card-banner">
+                                    <img src="./assets/images/product-3.jpg" width="312" height="350" loading="lazy" alt="product2" class="image-contain">
+
+                                    <div class="card-badge">New</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">
+                                                Ajouter au panier
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">
+                                                Liste de souhait
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">
+                                                Aperçu
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">
+                                                Compare
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Hommes</a> /
+                                        <a href="#" class="card-cat-link">Sport</a>
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 card-title">
+                                    <a href="#">Running sneaker shoes</a>
+                                </h3>
+
+                                <data class="card-price" value="180.95">GNF180.95</data>
+                            </div>
+                        </li>
+
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+                                <figure class="card-banner">
+                                    <img src="./assets/images/product-5.jpg" width="312" height="350" loading="lazy" alt="product2" class="image-contain">
+
+                                    <div class="card-badge">-25%</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">
+                                                Ajouter au panier
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">
+                                                Liste de souhait
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">
+                                                Aperçu
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">
+                                                Compare
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Hommes</a> /
+                                        <a href="#" class="card-cat-link">Sport</a>
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 card-title">
+                                    <a href="#">Running sneaker shoes</a>
+                                </h3>
+
+                                <data class="card-price" value="180.95">GNF180.95 <del>GNF200.00</del> </data>
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+                                <figure class="card-banner">
+                                    <img src="./assets/images/product-4.jpg" width="312" height="350" loading="lazy" alt="product2" class="image-contain">
+
+                                    <div class="card-badge">-25%</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">
+                                                Ajouter au panier
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">
+                                                Liste de souhait
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">
+                                                Aperçu
+                                            </div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">
+                                                Compare
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Hommes</a> /
+                                        <a href="#" class="card-cat-link">Sport</a>
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 card-title">
+                                    <a href="#">Running sneaker shoes</a>
+                                </h3>
+
+                                <data class="card-price" value="180.95">GNF180.95 <del>GNF200.00</del> </data>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <!-- CTA -->
+            <section class="section cta">
+                <div class="container">
+                    <ul class="cta-list">
+                        <li>
+                            <div class="cta-card" 
+                            style="background-image:url('./assets/images/cta-1.jpg');">
+                                <p class="card-subtitle">Adidas Shoes</p>
+
+                                <h3 class="h2 card-title">The Summer Sale Off -50%</h3>
+
+                                <a href="#" class="btn btn-link">
+                                    <span>Shop Now</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cta-card" 
+                            style="background-image:url('./assets/images/cta-2.jpg');">
+                                <p class="card-subtitle">Nike Shoes</p>
+
+                                <h3 class="h2 card-title">Makes Yourself Keep Sporty</h3>
+
+                                <a href="#" class="btn btn-link">
+                                    <span>Shop Now</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+            <!-- SPECIAL -->
+            <section class="section special">
+                <div class="container">
+                    <div class="special-banner" style="background-image:url('./assets/images/special-banner.jpg');">
+                        <h2 class="h3 banner-title">Tendance</h2>
+
+
+                        <a href="#" class="btn btn-link">
+                            <span>Tout voir</span>
+
+                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+                    </div>
+
+                    <div class="special-product">
+                        <h2 class="h2 section-title">
+                            <span class="text">Special Nike</span>
+
+                            <span class="line"></span>
+                        </h2>
+
+                        <ul class="has-scrollbar">
+                        
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
+                                    <figure class="card-banner">
+                                        <img src="./assets/images/product-1.jpg" width="312" height="350" loading="lazy" alt="product1"
+                                            class="image-contain">
+                        
+                                        <div class="card-badge">New</div>
+                        
+                                        <ul class="card-action-list">
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                    <ion-icon name="cart-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-1">
+                                                    Ajouter au panier
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-2">
+                                                    Liste de souhait
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-3">
+                                                    Aperçu
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                    <ion-icon name="repeat-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-4">
+                                                    Compare
+                                                </div>
+                                            </li>
+                        
+                                        </ul>
+                                    </figure>
+                        
+                                    <div class="card-content">
+                                        <div class="card-cat">
+                                            <a href="#" class="card-cat-link">Hommes</a> /
+                                            <a href="#" class="card-cat-link">Femmes</a>
+                                        </div>
+                                    </div>
+                        
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Running sneaker shoes</a>
+                                    </h3>
+                        
+                                    <data class="card-price" value="180.95">GNF180.95</data>
+                                </div>
+                            </li>
+                        
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
+                                    <figure class="card-banner">
+                                        <img src="./assets/images/product-2.jpg" width="312" height="350" loading="lazy" alt="product2"
+                                            class="image-contain">
+                        
+                                        <div class="card-badge">New</div>
+                        
+                                        <ul class="card-action-list">
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                    <ion-icon name="cart-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-1">
+                                                    Ajouter au panier
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-2">
+                                                    Liste de souhait
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-3">
+                                                    Aperçu
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                    <ion-icon name="repeat-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-4">
+                                                    Compare
+                                                </div>
+                                            </li>
+                        
+                                        </ul>
+                                    </figure>
+                        
+                                    <div class="card-content">
+                                        <div class="card-cat">
+                                            <a href="#" class="card-cat-link">Hommes</a> /
+                                            <a href="#" class="card-cat-link">Femmes</a>
+                                        </div>
+                                    </div>
+                        
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Running sneaker shoes</a>
+                                    </h3>
+                        
+                                    <data class="card-price" value="180.95">GNF180.95</data>
+                                </div>
+                            </li>
+                        
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
+                                    <figure class="card-banner">
+                                        <img src="./assets/images/product-3.jpg" width="312" height="350" loading="lazy" alt="product2"
+                                            class="image-contain">
+                        
+                                        <div class="card-badge">New</div>
+                        
+                                        <ul class="card-action-list">
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                    <ion-icon name="cart-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-1">
+                                                    Ajouter au panier
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-2">
+                                                    Liste de souhait
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-3">
+                                                    Aperçu
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                    <ion-icon name="repeat-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-4">
+                                                    Compare
+                                                </div>
+                                            </li>
+                        
+                                        </ul>
+                                    </figure>
+                        
+                                    <div class="card-content">
+                                        <div class="card-cat">
+                                            <a href="#" class="card-cat-link">Hommes</a> /
+                                            <a href="#" class="card-cat-link">Sport</a>
+                                        </div>
+                                    </div>
+                        
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Running sneaker shoes</a>
+                                    </h3>
+                        
+                                    <data class="card-price" value="180.95">GNF180.95</data>
+                                </div>
+                            </li>
+                                             
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
+                                    <figure class="card-banner">
+                                        <img src="./assets/images/product-5.jpg" width="312" height="350" loading="lazy" alt="product2"
+                                            class="image-contain">
+                        
+                                        <div class="card-badge">-25%</div>
+                        
+                                        <ul class="card-action-list">
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                    <ion-icon name="cart-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-1">
+                                                    Ajouter au panier
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-2">
+                                                    Liste de souhait
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-3">
+                                                    Aperçu
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                    <ion-icon name="repeat-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-4">
+                                                    Compare
+                                                </div>
+                                            </li>
+                        
+                                        </ul>
+                                    </figure>
+                        
+                                    <div class="card-content">
+                                        <div class="card-cat">
+                                            <a href="#" class="card-cat-link">Hommes</a> /
+                                            <a href="#" class="card-cat-link">Sport</a>
+                                        </div>
+                                    </div>
+                        
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Running sneaker shoes</a>
+                                    </h3>
+                        
+                                    <data class="card-price" value="180.95">GNF180.95 <del>GNF200.00</del> </data>
+                                </div>
+                            </li>
+                        
+                            <li class="product-item">
+                                <div class="product-card" tabindex="0">
+                                    <figure class="card-banner">
+                                        <img src="./assets/images/product-4.jpg" width="312" height="350" loading="lazy" alt="product2"
+                                            class="image-contain">
+                        
+                                        <div class="card-badge">-25%</div>
+                        
+                                        <ul class="card-action-list">
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                    <ion-icon name="cart-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-1">
+                                                    Ajouter au panier
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-2">
+                                                    Liste de souhait
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-3">
+                                                    Aperçu
+                                                </div>
+                                            </li>
+                        
+                                            <li class="card-action-item">
+                                                <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                    <ion-icon name="repeat-outline"></ion-icon>
+                                                </button>
+                        
+                                                <div class="card-action-tooltip" id="card-label-4">
+                                                    Compare
+                                                </div>
+                                            </li>
+                        
+                                        </ul>
+                                    </figure>
+                        
+                                    <div class="card-content">
+                                        <div class="card-cat">
+                                            <a href="#" class="card-cat-link">Hommes</a> /
+                                            <a href="#" class="card-cat-link">Sport</a>
+                                        </div>
+                                    </div>
+                        
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Running sneaker shoes</a>
+                                    </h3>
+                        
+                                    <data class="card-price" value="180.95">GNF180.95 <del>GNF200.00</del> </data>
+                                </div>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- SERVICE -->
+            <section class="section service">
+                <div class="container">
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./assets/images/service-1.png" alt="service1" width="53" height="28" loading="lazy">
+                                </div>
+
+                                <div>
+                                    <h3 class="h4 card-title">Livraison gratuite</h3>
+
+                                    <p class="card-text">
+                                        Au délà de <span>GNF200</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./assets/images/service-2.png" alt="service1" width="43" height="35" loading="lazy">
+                                </div>
+
+                                <div>
+                                    <h3 class="h4 card-title">Paiement facile</h3>
+
+                                    <p class="card-text">
+                                        Paiement 100% securisé
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./assets/images/service-3.png" alt="service1" width="40" height="40" loading="lazy">
+                                </div>
+
+                                <div>
+                                    <h3 class="h4 card-title">Retour</h3>
+
+                                    <p class="card-text">
+                                        Remboursement avant une semaine
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./assets/images/service-4.png" alt="service1" width="40" height="40" loading="lazy">
+                                </div>
+
+                                <div>
+                                    <h3 class="h4 card-title">SAV 24/7</h3>
+
+                                    <p class="card-text">
+                                        Notre équipe à votre écoute
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+            <!-- INSTAGRAM POST -->
+            <section class="section insta-post">
+                <ul class="insta-post-list has-scrollbar">
+                    <li class="insta-post-item">
+                        <img src="./assets/images/insta-1.jpg" alt="image1" class="insta-post-banner image-contain" width="100" height="100" loading="lazy">
+
+                        <a href="#" class="insta-post-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <img src="./assets/images/insta-2.jpg" alt="image1" class="insta-post-banner image-contain" width="100" height="100" loading="lazy">
+
+                        <a href="#" class="insta-post-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <img src="./assets/images/insta-3.jpg" alt="image1" class="insta-post-banner image-contain" width="100" height="100" loading="lazy">
+
+                        <a href="#" class="insta-post-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <img src="./assets/images/insta-4.jpg" alt="image1" class="insta-post-banner image-contain" width="100" height="100" loading="lazy">
+
+                        <a href="#" class="insta-post-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <img src="./assets/images/insta-5.jpg" alt="image1" class="insta-post-banner image-contain" width="100" height="100" loading="lazy">
+
+                        <a href="#" class="insta-post-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <img src="./assets/images/insta-6.jpg" alt="image1" class="insta-post-banner image-contain" width="100" height="100" loading="lazy">
+
+                        <a href="#" class="insta-post-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <img src="./assets/images/insta-7.jpg" alt="image1" class="insta-post-banner image-contain" width="100" height="100" loading="lazy">
+
+                        <a href="#" class="insta-post-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <img src="./assets/images/insta-8.jpg" alt="image1" class="insta-post-banner image-contain" width="100" height="100" loading="lazy">
+
+                        <a href="#" class="insta-post-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+
+
+
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="footer-top section">
+                    <div class="container">
+                        <div class="footer-brand">
+                            <a href="" class="logo">
+                                <img src="./assets/images/logo.svg" loading="lazy" width="160" height="50" alt="footer logo">
+                            </a>
+
+                            <ul class="social-list">
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a>
+                                </li>
+
+                                
+                            </ul>
+                        </div>
+
+                        <div class="footer-link-box">
+                            <ul class="footer-list">
+                                <li>
+                                    <p class="footer-list-title">
+                                        Contactez-nous
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <address class="footer-link">
+                                        <ion-icon name="location"></ion-icon>
+
+                                        <span class="footer-link-text">
+
+                                        Avenue al Faouz 10130 Yacoub El Mansour, Maroc
+
+                                        </span>
+
+                                    </address>
+                                </li>
+
+                                <li>
+                                    <a href="tel:+212624232775" class="footer-link">
+                                        <ion-icon name="call"></ion-icon>
+
+                                        <span class="footer-link-text">
+
+                                        (+212) 624 232 775
+
+                                        </span>
+
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="mailto:abdulkabirkeita825@gmail.com" class="footer-link">
+                                        <ion-icon name="mail"></ion-icon>
+
+                                        <span class="footer-link-text">
+
+                                        service@info.com
+
+                                        </span>
+
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="footer-list">
+                                <li>
+                                    <p class="footer-list-title">
+                                        Mon compte
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                        <span class="footer-link-text">
+                                            Panier
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                        <span class="footer-link-text">
+                                            Wishlist
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                        <span class="footer-link-text">
+                                            Compare
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                        <span class="footer-link-text">
+                                            Nouveauté
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="footer-list">
+                                <p class="footer-list-title">
+                                    Ouverture
+                                </p>
+
+                                <table class="footer-table">
+                                    <tbody>
+                                        <tr class="table-row">
+                                            <th class="table-head" scrope="row">
+                                                Lun-Mar
+                                            </th>
+
+                                            <td class="table-data">8am-7pm</td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <th class="table-head" scrope="row">
+                                                Mer-Jeu
+                                            </th>
+
+                                            <td class="table-data">8am-7pm</td>
+                                        </tr>
+                                        <tr class="table-row">
+                                            <th class="table-head" scrope="row">
+                                                Ven-Sam
+                                            </th>
+
+                                            <td class="table-data">8am-7pm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <div class="footer-list">
+                                <p class="footer-list-title">
+                                    Newsletter
+                                </p>
+
+                                <p class="newsletter-text">
+                                    S'inscrire à la newsletter pour être informé de nouvelles offres & promotions
+                                </p>
+
+                                <form action="#" class="newsletter-form" method="POST">
+                                    <input type="email" name="email" id="email" class="newsletter-input" placeholder="Votre adresse email">
+
+                                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="copyright">
+                            Copyright &copy; 2022
+                        </p>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+        </article>
+    </main>
+    
+    
+    
+
+    <!-- ALLER AU DEBUT -->
+    <a href="#top" class="go-top-btn" data-go-top>
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    
+    <!-- custom js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
